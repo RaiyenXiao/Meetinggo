@@ -231,6 +231,7 @@ body.registration{background-color: #F5F5F5;}
 		a.codedown:hover,a.codedown:link,a.codedown:visited{color: #999;text-decoration: none;}
 	.success-prompt{color: #2f86c9;font-size: 18px;}
 		.success-prompt i{color: #00a300;font-size: 20px;}
+		.success-prompt span{font-size: 12px;color: #999999;line-height: 3;}
 /*查询报名信息*/
 .return-fill{color: #999999;font-size: 14px;display: block;margin-top: 40px;}
 .return-fill:hover,.return-fill:link,.return-fill:visited{color: #999999;text-decoration: none;}
