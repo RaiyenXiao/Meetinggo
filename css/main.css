@@ -219,6 +219,7 @@ body.registration{background-color: #F5F5F5;}
 		.meeting-infor h1{font-weight: normal;margin: 0;color: #2f86c9;font-size: 24px;}
 		.meeting-infor p{color: #333333;font-size: 18px;margin:24px 0 0 0;}
 .registration-infor-box{padding: 0 40px;}
+	.registration-infor .panel{box-shadow: none;}
 	.registration-prompt{border: 1px dashed #DDDDDD;line-height: 32px;color: #2f86c9;font-size: 14px;}
 	.submit-registration{display: block;margin: 60px auto 0 auto;}
 .registration-copyright{line-height: 40px;color: #AAAAAA;background-color: #f4f4f4;margin-top: 10px;}	
