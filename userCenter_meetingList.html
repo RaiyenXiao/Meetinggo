@@ -1,0 +1,195 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>会·更轻松</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/format.css" media="screen">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="js/jquery_min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".banner").slidesjs({
+		//width: 940,
+		height:380,
+		play:{auto:true}
+	});
+});
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid head">
+	<div class="row tool">
+		<div class="row width-main mc">
+			<div class="col-sm-6">
+				欢迎光临！<a>请登录</a><a>免费注册</a>
+			</div>
+			<div class="col-sm-6 taR">
+				<a href="userCenter_meetingList.html">个人中心</a><a href="" class="btn-green boxR tra-fast">创建会议</a>
+			</div>
+		</div>
+	</div>
+	<div class="row nav">
+		<div class="row width-main mc">
+			<div class="col-sm-4">
+				<a class="logo ui" href="index.html"></a>
+			</div>
+			<div class="col-sm-8 tra-fast_E taR">
+				<a href="index.html" active>首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid userCenter">
+	<div class="row banner">
+		<a href="" style="background-image:url(http://docs.alibabagroup.com/assets2/images/cn/home/home_banner_1.png);"></a>
+		<a href="" style="background-image:url(http://eventdove.com/resource/20150828/96_20150828165052467.jpg);"></a>
+	</div>
+	<div class="row row-public width-main mc">
+		<div class="nav">
+			<div class="btn-group tra-fast_E">
+				<a class="btn btn-default" href="userCenter_meetingList.html" active>会议管理</a>
+				<a class="btn btn-default" href="userCenter_userBase.html">账号及信息管理</a>
+			</div>
+		</div>
+	</div>
+	<div class="panel width-main">
+		<div class="title vaM_E"><span class="glyphicon glyphicon-send ico-text"></span>已发布</div>
+		<table class="meetingListManage tlF tra-fast_EE">
+			<thead>
+				<tr>
+					<th>会议名称</th>
+					<th class="w11x">开始时间</th>
+					<th class="w11x">结束时间</th>
+					<th class="w12x">报名/签到人数</th>
+					<th class="w6x">状态</th>
+					<th class="w9x">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="nothing" colspan="6">暂无已发布的会议<br><span class="fs14">请&nbsp;<a href="userCenter_meetingNew.html" class="btn btn-default btn-xs">创建会议</a>&nbsp;或从“待发布”列表中选择会议进行发布</span></td>
+				</tr>
+				<tr>
+					<td><span class="textCut" title="这里填入会议全称">会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称</span></td>
+					<td>2015-12-12 09:30</td>
+					<td>2015-12-30 17:00</td>
+					<td>10/0</td>
+					<td>已发布</td>
+					<td class="tool">
+						<div class="btn-group">
+							<a href="userCenter_meetingManage.html" class="btn btn-default">管理</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><span class="textCut" title="这里填入会议全称">会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称</span></td>
+					<td>2015-12-12 09:30</td>
+					<td>2015-12-30 09:30</td>
+					<td>120,000/110,000</td>
+					<td>已发布</td>
+					<td class="tool">
+						<div class="btn-group">
+							<a href="userCenter_meetingManage.html" class="btn btn-default">管理</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="6" class="flipPageSys boxR_E vaM_E">
+						<a href="">首页</a>
+						<a href="" class="arrowL" title="上一页"></a>
+						<a href="" active>1</a>
+						<a href="">2</a>
+						<a href="" class="arrowR" title="下一页"></a>
+						<a href="">尾页</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<div class="panel width-main">
+		<div class="title vaM_E"><span class="glyphicon glyphicon-inbox ico-text"></span>待发布<a class="btn btn-success addOn tra-fast" href="userCenter_meetingNew.html"><span class="glyphicon glyphicon-plus ico-text vaM"></span>新建会议</a></div>
+		<table class="meetingListManage tlF tra-fast_EE">
+			<thead>
+				<tr>
+					<th>会议名称</th>
+					<th class="w11x">开始时间</th>
+					<th class="w11x">结束时间</th>
+					<th class="w9x">操作</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td class="nothing" colspan="4">暂无会议<br><a href="userCenter_meetingNew.html" class="btn btn-danger btn-xs fs14">立即创建</a></td>
+				</tr>
+				<tr>
+					<td><span class="textCut" title="这里填入会议全称">会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称</span></td>
+					<td>2015-12-12 09:30</td>
+					<td>2015-12-30 17:00</td>
+					<td class="tool">
+						<div class="btn-group">
+							<a href="userCenter_meetingManage.html" class="btn btn-default">编辑/发布</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td><span class="textCut" title="这里填入会议全称">会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称会议名称</span></td>
+					<td>2015-12-12 09:30</td>
+					<td>2015-12-30 09:30</td>
+					<td class="tool">
+						<div class="btn-group">
+							<a href="userCenter_meetingManage.html" class="btn btn-default">编辑/发布</a>
+						</div>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="4" class="flipPageSys boxR_E vaM_E">
+						<a href="">首页</a>
+						<a href="" class="arrowL" title="上一页"></a>
+						<a href="" active>1</a>
+						<a href="">2</a>
+						<a href="" class="arrowR" title="下一页"></a>
+						<a href="">尾页</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<footer class="row">
+		<div class="info width-main tra-fast_EE mc">
+			<div>
+				<div class="title">关于我们</div>
+				<a href="">关于会议</a>
+				<a href="">加入会议</a>
+			</div>
+			<div>
+				<div class="title">导航</div>
+				<a href="">首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+			<div class="baseInfo vaM_E">
+				<div class="title">关注会议</div>
+				<span class="ico-mail ico-text ui"></span>support@huiyi.com<br>
+				<span class="ico-tell ico-text ui"></span>85601515<br>
+				<span class="ico-qq ico-text ui"></span>1545486486<br>
+				<span class="ico-weiboSina ico-text ui"></span>huiyi@sina.com<br>
+				<span class="ico-wechat ico-text ui"></span>扫二维码！了解更多！ <span class="glyphicon glyphicon-hand-right ico-text"></span>
+				<img src="image/wechatCode.jpg" class="wechatCode"> 
+			</div>
+		</div>
+		<div class="copyright ui">Copyright©2015 huiyi.com 版权所有 苏ICP备10211262</div>
+	</footer>
+</div>
+</body>
+</html>

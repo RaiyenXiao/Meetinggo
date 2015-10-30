@@ -1,0 +1,166 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>会·更轻松</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/format.css" media="screen">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="js/jquery_min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".banner").slidesjs({
+		//width: 940,
+		height:380,
+		play:{auto:true}
+	});
+	
+	function voteListSequence(){
+		$(".voteItemList").children("div").each(function(){
+			$(this).find("[placeholder]").attr("placeholder",($(this).index()+1)+".");
+		});
+	}
+	
+	$(".voteItemList").on("click",".btn-delete",function(){//删除选项
+		$(this).parentsUntil(".voteItemList").hide(function(){
+			$(this).remove();
+			voteListSequence();
+		});
+	});
+	$(".voteItemList").on("click",".btn-voteItemAdd",function(){//添加选项
+		var newItemStr="<div><input type='text' class='form-control' placeholder='"+($(".voteItemList").children().length-1)+".'><button class='btn-delete glyphicon glyphicon-minus-sign tra-fast' title='点击直接删除'></button></div>";
+		var $newItem=$(newItemStr).css({display:"none"});
+		$(this).before($newItem);
+		$newItem.show(500,function(){$newItem.removeAttr("style");});
+	});
+	
+});
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid head">
+	<div class="row tool">
+		<div class="row width-main mc">
+			<div class="col-sm-6">
+				欢迎光临！<a>请登录</a><a>免费注册</a>
+			</div>
+			<div class="col-sm-6 taR">
+				<a href="userCenter_meetingList.html">个人中心</a><a href="" class="btn-green boxR tra-fast">创建会议</a>
+			</div>
+		</div>
+	</div>
+	<div class="row nav">
+		<div class="row width-main mc">
+			<div class="col-sm-4">
+				<a class="logo ui" href="index.html"></a>
+			</div>
+			<div class="col-sm-8 tra-fast_E taR">
+				<a href="index.html" active>首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid userCenter">
+	<div class="row banner">
+		<a href="" style="background-image:url(http://docs.alibabagroup.com/assets2/images/cn/home/home_banner_1.png);"></a>
+		<a href="" style="background-image:url(http://eventdove.com/resource/20150828/96_20150828165052467.jpg);"></a>
+	</div>
+	<div class="row row-public width-main mc">
+		<div class="nav">
+			<div class="btn-group tra-fast_E">
+				<a class="btn btn-default" href="userCenter_meetingList.html" active>会议管理</a>
+				<a class="btn btn-default" href="userCenter_userBase.html">账号及信息管理</a>
+			</div>
+		</div>
+	</div>
+	<div class="row width-main meetingManage mc">
+		<ul class="col-sm-2 sideMenu noSelect tra-fast_EE">
+			<li>
+				<div class="title">信息管理</div>
+				<a href="userCenter_meetingManage.html">基本信息</a>
+			</li>
+			<li active>
+				<div class="title">页面管理</div>
+				<a href="userCenter_agendumList.html">议程管理</a>
+				<a href="userCenter_voteList.html" active>投票管理</a>
+				<a href="">话题论坛</a>
+				<a href="">抽奖管理</a>
+			</li>
+			<li>
+				<div class="title">人员管理</div>
+				<a href="">报名与签到</a>
+				<a href="">会议名录</a>
+			</li>
+		</ul>
+		<div class="col-sm-10">
+			<div class="panel">
+				<div class="title vaM_E"><span class="glyphicon glyphicon-list-alt ico-text"></span>新建投票</div>
+				<div class="content tableClearType vaM_EE">
+					<div class="tableSys">
+						<div class="w5x must th">标题：</div>
+						<div class="td"><input type="text" class="form-control"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">类型：</div>
+						<div class="td"><label><input type="radio" name="voteType">单选</label><label class="ml20"><input type="radio" name="voteType">多选</label></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">内容：</div>
+						<div class="td"><textarea class="form-control h8x-imp"></textarea></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">选项：</div>
+						<div class="td voteItemList">
+							<div><input type="text" class="form-control" placeholder="1."><button class="btn-delete glyphicon glyphicon-minus-sign tra-fast" title="点击直接删除"></button></div>
+							<div><input type="text" class="form-control" placeholder="2."><button class="btn-delete glyphicon glyphicon-minus-sign tra-fast" title="点击直接删除"></button></div>
+							<button type="button" class="btn btn-default btn-sm tra-fast btn-voteItemAdd"><span class="glyphicon glyphicon-plus ico-text"></span>添加新选项</button>
+							<span class="cRed ml20">注：至少添加2个选项</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="taC row-public tra-fast_E">
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk ico-text vaM"></span>仅保存</button>
+				<button type="submit" class="btn btn-success ml20"><span class="glyphicon glyphicon-send ico-text vaM"></span>保存并开启</button>
+			</div>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="info width-main tra-fast_EE mc">
+			<div>
+				<div class="title">关于我们</div>
+				<a href="">关于会议</a>
+				<a href="">加入会议</a>
+			</div>
+			<div>
+				<div class="title">导航</div>
+				<a href="">首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+			<div class="baseInfo vaM_E">
+				<div class="title">关注会议</div>
+				<span class="ico-mail ico-text ui"></span>support@huiyi.com<br>
+				<span class="ico-tell ico-text ui"></span>85601515<br>
+				<span class="ico-qq ico-text ui"></span>1545486486<br>
+				<span class="ico-weiboSina ico-text ui"></span>huiyi@sina.com<br>
+				<span class="ico-wechat ico-text ui"></span>扫二维码！了解更多！ <span class="glyphicon glyphicon-hand-right ico-text"></span>
+				<img src="image/wechatCode.jpg" class="wechatCode"> 
+			</div>
+		</div>
+		<div class="copyright ui">Copyright©2015 huiyi.com 版权所有 苏ICP备10211262</div>
+	</footer>
+</div>
+</body>
+</html>

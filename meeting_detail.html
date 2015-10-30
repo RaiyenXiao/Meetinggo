@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>会议网站</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+	<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+	<link rel="stylesheet" href="css/meanmenu.css" />
+	<link rel="stylesheet" href="css/format.css" media="screen">
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<script src="js/jquery_min.js"></script>
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/jquery.meanmenu.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">	
+		/*页面滚动时顶部保留菜单栏fixed*/  
+	    $(function(){
+	    	$(window).scroll(function(){
+	    		var scrollHeight = $(window).scrollTop();
+//				var winHeight = $(window).height() 
+	    		var banHeight = $(".meetingDetail-banner").height();
+				if(scrollHeight > banHeight){
+					$("#MT-header").addClass("navF");
+				}else{
+					$("#MT-header").removeClass("navF");
+				}
+	    	});
+	    	//内部跳转平滑滚动
+			var navHeight = $("#MT-header .navigation").height();
+			$("#MT-header").on("click","#XQ",function(){
+				$("#MT-header ul li a").removeClass("b");
+				$(this).children().addClass("b");
+				$("html,body").animate({scrollTop:$("#meeting-XQ").offset().top - navHeight},500);
+			});
+			$("#MT-header").on("click","#Time",function(){
+				$("#MT-header ul li a").removeClass("b");
+				$(this).children().addClass("b");
+				$("html,body").animate({scrollTop:$("#meetingDetail-Time").offset().top - navHeight},500);
+			});
+			$("#MT-header").on("click","#Vote",function(){
+				$("#MT-header ul li a").removeClass("b");
+				$(this).children().addClass("b");
+				$("html,body").animate({scrollTop:$("#vote").offset().top},500);
+			});
+			$("#MT-header").on("click","#Top",function(){
+				$("#MT-header ul li a").removeClass("b");
+				$(this).children().addClass("b");
+				$("html,body").animate({scrollTop:0});	
+			});
+	    });
+	    jQuery(document).ready(function () {
+		    jQuery('#MT-header .navigation').meanmenu();
+		});
+		
+	</script>
+</head>
+<body>
+<!--自定义网站内容-->
+	<div class="meetingDetail-banner ofH">
+		<img src="image/MTBG.png" alt="" class="img-responsive">
+	</div>
+	<div id="MT-header">
+		<div class="container navigation">
+			<ul class="meetingDetail-navigation taC">
+				<li id="Top"><a href="#" class="b">首页</a></li>
+				<li id="XQ"><a href="#meeting-XQ">会议详情</a></li>
+				<li id="Time"><a href="#meetingDetail-Time">时间地点</a></li>
+				<li><a href="" class="apply boxR">我要报名</a></li>
+				<li id="Vote"><a href="#vote">投票</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="main">
+	        <div id="meeting-XQ">
+			<div class="container meetingDetailBox">
+				<h2 class="taC" >会议详情</h2>
+				<ul>
+					<li>
+						<h3 class="meetingDetail-title">会议介绍</h3>
+						<p>
+							9月24日，2015高性能计算用户大会(China HPC User Forum 2015)将在北京举行，2015高性能计算用户大会将以“大计算”为主题，由亚洲超算协会联合浪潮、英特尔等举办，邀请来自国内外等著名高性能计算专家、用户和产品技术厂商共同探讨高性能计算在“大计算背景下的技术和应用发展方向。
+						</p>
+						<p>目前，高性能计算不仅在传统科学与工程计算领域承担重要的科技创新基础设施作用，同时与云计算、大数据的融合趋势也日益明确，计算的定义变得更加广泛。可以预期，在下一个五年，我们将迎来超级计算性能进入百亿亿次时代，这将为世界带来更多创新的机会与可能性。可以说，高性能计算已进入“大计算”时代。</p>
+						<p>高性能计算用户大会迄今已举办过4届，经过数年发展，高性能用户大会吸引了英特尔、英伟达、中科院、清华大学、中石油等一批高性能计算领域的海内外知名技术厂商、应用和研究机构参与，逐渐发展成为国内高性能计算用户了解最新技术进展、交流应用经验、学科交叉创新的顶级盛会。</p>
+					</li>
+					<li>
+						<h3 class="meetingDetail-title">会议日程</h3>
+						<p>9:00-9:10<span>专家致词</span></p>
+						<p>9:00-9:10<span>专家致词</span></p>
+						<p>9:00-9:10<span>专家致词</span></p>
+						<p>9:00-9:10<span>专家致词</span></p>
+						<p>9:00-9:10<span>专家致词</span></p>
+					</li>
+					<li class="toastmasterBox">
+						<h3 class="meetingDetail-title">演讲嘉宾</h3>
+						<ul>
+							<li class="toastmaster-list">
+								<div class="toastmaster-LBox"><div class="toastmaster-photo" style="background-image:url(image/tolerant_photo.jpg)"></div></div>
+								<div class="toastmaster-RBox">
+									<h4 class="toastmaster-name">钱德沛</h4>
+									<p>北京航空航天大学, 国家863计划“高性能计算机及其核心软件”重大专项总体组组长、北京航空航天大学教授钱德沛教授多年从事计算机体
+	系结构和实现技术、计算机网络技术等方面的研究。曾主持或参加国家自然科学基金、国家863、973计划和企事业委托开发等各类科研项目
+	20多项。曾主持了西安交通大学校园网的建设。在863专家组工作期间，作为责任专家，组织了国家高性能计算环境、中国高速信息示范网、
+	中国国家网格等的研究工作。</p>
+								</div>	
+							</li>
+							<li class="toastmaster-list">
+								<div class="toastmaster-LBox"><div class="toastmaster-photo" style="background-image:url(image/tolerant_photo.jpg)"></div></div>
+								<div class="toastmaster-RBox">
+									<h4 class="toastmaster-name">钱德沛</h4>
+									<p>北京航空航天大学, 国家863计划“高性能计算机及其核心软件”重大专项总体组组长、北京航空航天大学教授钱德沛教授多年从事计算机体
+	系结构和实现技术、计算机网络技术等方面的研究。曾主持或参加国家自然科学基金、国家863、973计划和企事业委托开发等各类科研项目
+	20多项。曾主持了西安交通大学校园网的建设。在863专家组工作期间，作为责任专家，组织了国家高性能计算环境、中国高速信息示范网、
+	中国国家网格等的研究工作。</p>
+								</div>	
+							</li>
+							<li class="toastmaster-list">
+								<div class="toastmaster-LBox"><div class="toastmaster-photo" style="background-image:url(image/tolerant_photo.jpg)"></div></div>
+								<div class="toastmaster-RBox">
+									<h4 class="toastmaster-name">钱德沛</h4>
+									<p>北京航空航天大学, 国家863计划“高性能计算机及其核心软件”重大专项总体组组长、北京航空航天大学教授钱德沛教授多年从事计算机体
+	系结构和实现技术、计算机网络技术等方面的研究。曾主持或参加国家自然科学基金、国家863、973计划和企事业委托开发等各类科研项目
+	20多项。曾主持了西安交通大学校园网的建设。在863专家组工作期间，作为责任专家，组织了国家高性能计算环境、中国高速信息示范网、
+	中国国家网格等的研究工作。</p>
+								</div>	
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="meetingDetail-Time">
+			<div class="meetingDetailBox container">
+				<h2 class="taC">时间地点</h2>
+				<ul>
+					<li>
+						<h3>会议时间</h3>
+						<p class="detailTime"><span class="starttime">2015-09-22 08:30 </span>- 开始<span class="endtime">2015-09-22 16:50 </span>- 结束</p>
+						<div class="deadline b">距离开始还有：<span class="">7天 15小时 27分钟</span></div>
+					</li>
+					<li>
+						<h3>会议地点间</h3>
+						<p>中国 无锡 滨湖区</p>
+						<p>万象设计江苏有限公司</p>
+						<p>无锡市滨湖区建筑路599号A幢3楼万象设计</p>
+						<div class="meetingpalce-map"><img src="image/map.jpg" alt="" class="img-responsive"></div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div id="vote">
+			<div class="container">
+				<h2 class="taC">投票</h2>
+				<h3>投票标题</h3>
+				<ul>
+					<p>单选</p>
+					<li><label><input type="radio" value="选项卡a">选项卡a</label></li>
+					<li><label><input type="radio" value="选项卡a">选项卡b</label></li>
+					<li><label><input type="radio" value="选项卡a">选项卡c</label></li>
+				</ul>
+				<button type="submit" class="taC Vote-btn boxR">投票</button>
+			</div>
+		</div>
+	</div>
+<!--自定义网站内容 End-->
+<div class="meetingDetail-copyright">
+	<div class="container">
+		<span>Copyright©2015 huiyi.com 版权所有 苏ICP备10211262   </span>
+	</div>
+</div>
+</body>
+</html>

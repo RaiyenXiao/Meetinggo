@@ -1,0 +1,351 @@
+﻿.ui,.slidesjs-navigation{background:url(../image/ui.png) no-repeat center;background-size:1000px 400px;}
+[disable]{opacity:.2;-webkit-pointer-events:none;-moz-pointer-events:none;pointer-events:none;}
+
+/*bootstrap||other fix&ex*/
+a:hover{text-decoration:none;}
+.row-public{padding:20px 0;}
+.row-relax{padding:50px 0;}
+.btn-success{background-color:#62bc0e;}
+.progress:last-child{margin-bottom:0;}
+
+/*public*/
+.mt10{margin-top:10px;}
+.mt20{margin-top:20px;}
+.ml5{margin-left:5px;}
+.ml10{margin-left:10px;}
+.ml20{margin-left:20px;}
+
+.w3x{width:3.1em;}
+.w3x-imp{width:3.1em !important;}
+.w4x{width:4.1em;}
+.w4x-imp{width:4.1em !important;}
+.w5x{width:5.1em;}
+.w5x-imp{width:5.1em !important;}
+.w6x{width:6.1em;}
+.w6x-imp{width:6.1em !important;}
+.w7x{width:7.1em;}
+.w7x-imp{width:7.1em !important;}
+.w8x{width:8.1em;}
+.w8x-imp{width:8.1em !important;}
+.w9x{width:9.1em;}
+.w10x{width:10.1em;}
+.w11x{width:11.1em;}
+.w12x{width:12.1em;}
+.w13x{width:13.1em;}
+.w14x{width:14.1em;}
+.w15x{width:15.1em;}
+.h3x{height:3.1em;}
+.h4x{height:4.1em;}
+.h4x-imp{height:4.1em !important;}
+.h5x{height:5.1em;}
+.h5x-imp{height:5.1em !important;}
+.h6x{height:6.1em;}
+.h7x{height:7.1em;}
+.h8x{height:8.1em;}
+.h8x-imp{height:8.1em !important;}
+.h9x{height:9.1em;}
+
+.lh15{line-height:1.5;}
+.lh20{line-height:2;}
+
+.width-main{width:1000px;}
+.titleTag{border-bottom:1px solid #2f86c9;}
+	.titleTag>*{padding:.5em 1em;color:#fff;background-color:#2f86c9;display:inline-block;font-size:18px;}
+
+.tableSys,.tableSys_E>*{width:100%;display:table;table-layout:fixed;border-collapse:collapse;}
+	.tableSys>*,.tableSys_E>*>*{display:table-cell;}
+	
+/*btn*/
+.btn-green{background-color:#62bc0e;border-color:#62bc0e;}
+.btn-green:hover{background-color:#46aa00;border-color:#46aa00;}
+
+.btn-borderMode{background-color:transparent;}
+.btn-borderMode.btn-green{color:#62bc0e;}
+.btn-borderMode.btn-green:hover{color:#fff;}
+.btn-borderMode.btn-white-blue{border-color:#fff;color:#fff;}
+.btn-borderMode.btn-white-blue:hover{background-color:#fff;color:#2f86c9;}
+
+.btn-focusMore{width:140px;margin:0 auto;padding:.8em;display:block;text-align:center;}
+	
+/*ico*/
+span[class*="ico-"]{display:inline-block;position:relative;top:-1px;}
+.ico-text{display:inline-block;margin-right:5px;}
+[class^="ico-features"]{margin:-25px 0 0 -25px;width:50px;height:50px;}
+.ico-features1{background-position:0 -80px;}
+.ico-features2{background-position:-50px -80px;}
+.ico-features3{background-position:-100px -80px;}
+.ico-features4{background-position:-150px -80px;}
+.ico-features5{background-position:-200px -80px;}
+.ico-features6{background-position:-250px -80px;}
+
+.ico-arrowR-green{width:10px;height:20px;background-position:-10px -180px;}
+.btn-focusMore:hover .ico-arrowR-green{background-position:0 -180px;}
+
+.ico-date{width:20px;height:20px;background-position:-20px -180px;}
+.ico-location{width:20px;height:20px;background-position:-40px -180px;}
+.ico-mail{width:20px;height:20px;background-position:-60px -180px;}
+.ico-tell{width:20px;height:20px;background-position:-80px -180px;}
+.ico-qq{width:20px;height:20px;background-position:-100px -180px;}
+.ico-weiboSina{width:20px;height:20px;background-position:-120px -180px;}
+.ico-wechat{width:20px;height:20px;background-position:-140px -180px;}
+
+/*build*/
+.head{top:0;left:0;padding-bottom:10px;}
+	.head .tool{height:30px;background-color:#2f86c9;line-height:28px;color:#fff;}
+		.head .tool a{margin:0 5px;padding:.2em .5em;color:#fff;}
+	.head .nav{height:80px;font-size:14px;}
+		.head .nav a{margin:45px 0 0 0;padding:0 40px;display:inline-block;border-left:1px solid #333;color:#333;text-decoration:none;}
+		.head .nav a:first-child{border-left:none;}
+		.head .nav a[active],.head .nav a:hover{color:#62bc0e;}
+		.head a.logo{width:230px;height:80px;margin:20px 0 0 0;display:block;background-position:0 0;}
+		
+.banner{height:380px;position:relative;}
+
+.features>.title{text-align:center;font-size:30px;}
+.features>ul{margin:20px 0 0 0;}
+	.features li{width:33%;margin:0 0 80px 0;float:left;}
+		.features li>*:first-child{width:90px;height:90px;}
+		.features li>*:last-child{padding:0 2em 0 1em;font-size:16px;}
+		.features .ico{width:100%;height:100%;border-radius:50%;background-color:#62bc0e;position:relative;}
+			.features .ico>*{position:absolute;top:50%;left:50%;}
+		.features li .title{color:#333;font-size:18px;}
+		.features .info{margin:10px 0 0 0;color:#333;line-height:1.2;}
+.features>*:last-child{margin-top:-50px;}
+
+.coverView{height:320px;background:url(../image/cover.jpg) no-repeat center;background-size:cover;color:#fff;line-height:150px;}
+	.coverView .title{font-size:30px;text-align:center;}
+	
+.meetingList{margin:0 0 30px -50px;}
+	.meetingList>*{width:300px;height:220px;margin:20px 0 0 50px;padding:130px 10px 10px 10px;display:block;border:1px solid #eee;float:left;position:relative;}
+	.meetingList>*:hover{border-bottom:2px solid #62bc0e;text-decoration:none;}
+		.meetingList .cover{width:100%;height:110px;background:no-repeat center;background-size:auto 100%;position:absolute;top:0;left:0;}
+		.meetingList>*:hover .cover{background-size:auto 110%;}
+		.meetingList .title{font-size:16px;color:#000;}
+		.meetingList .sub{margin:5px 0 0 0;font-size:14px;color:#ccc;}
+		.meetingList .from{margin:10px 0 0 0;padding:10px 0 0 0;border-top:1px solid #ddd;color:#333;font-size:14px;}
+			.meetingList .from img{max-width:60px;max-height:20px;margin:0 10px 0 0;}
+
+/*主办方列表*/
+	.organizerList tr>*:first-child{width:210px;text-align:center !important;}
+	.organizerList img{max-width:180px;max-height:60px;}
+
+/*登录页面*/
+.loginBox{border: 1px solid #DDDDDD;border-top: 3px solid #62bc0d;padding: 60px 0;display: table;table-layout: fixed;width: 100%;}
+	.login-right{width: 500px;padding: 0 70px;border-right: 1px solid #DDDDDD;display: table-cell;}
+		.login-right h2{font-size: 20px;font-weight: normal;color: #000000;}
+		.login-right>input{width: 100%;margin-bottom: 30px;line-height: 36px;text-indent: 10px;font-size: 16px;border: 1px solid #DDDDDD;}
+		.login-right .verifivationBox>input{margin-bottom: 30px;line-height: 36px;text-indent: 10px;font-size: 16px;border: 1px solid #DDDDDD;width: 256px;}
+			.login-right .verifivationBox .verifivation{width: 90px;height: 38px;background-color: #DDDDDD;line-height: 38px;}
+		.login-right label{font-weight: normal;}
+		.login-right a{color: #2f86c9;}
+		.login-right .login{width: 100%;background-color: #62bc0d;color: #FFFFFF;line-height: 36px;margin: 30px auto;font-size: 16px;}
+		.login-right .register{width: 100%;background-color: #62bc0d;color: #FFFFFF;line-height: 36px;margin-bottom: 10px;font-size: 16px;}
+	.login-left{width: 500px;padding: 0 70px;display: table-cell;}
+		.login-left button{width: 100%;color: #2f86c9;border: 1px solid #2f86c9;line-height: 36px;font-size: 16px;}
+		.login-left button:hover{width: 100%;color: #62bc0d;border: 1px solid #62bc0d;}
+		.login-left .otherBox{margin-top: 50px;}
+			.login-left h3{font-size: 16px;font-weight: normal;}
+			.login-left .otherBox a{width: 32px;height: 32px;display: inline-block;}
+				.login-left .otherBox .ico-sina{background-image: url(../image/ui.png);background-position: -80px -270px;}
+				.login-left .otherBox .ico-tencent{background-image: url(../image/ui.png);background-position: -110px -270px;}
+/*更多会议*/
+.searchBox{height: 340px;background: url(../image/meetingBG.jpg) no-repeat  scroll center center / cover;}
+	.searchBox .width-main {margin-top: 108px;}
+		.searchBox .width-main>div{margin-bottom: 10px;}
+			.searchBox .width-main .text-center img{max-width: 100%;}
+			.searchBox .width-main .key-word{color: #FFFFFF;}
+				.searchBox .width-main .key-word a{color: #FFFFFF; display: inline-block;margin-left: 5px;}
+.s-input{width: 700px;height: 40px;background-color: rgba(0,0,0,.15);}
+	.s-input .s-address{width: 100px;line-height: 40px;background-color: #FFFFFF;color: #333333;}
+		.s-input .s-address select{border: none;color: #333333;width: 100px;text-indent: 10px;height: 40px;}
+	.s-input .s-time{width: 100px;line-height: 40px;background-color: #FFFFFF;color: #333333;margin-left: 1px;}
+		.s-input .s-time select{border: none;color: #333333;width: 100px;text-indent: 10px;height: 40px;}
+	.s-input .s-search{position: relative;}
+		.s-input .s-search .searchtext{width: 499px;background-color: rgba(0,0,0,0);border: 1px solid #FFFFFF;line-height: 38px;text-indent: 10px;padding: 0;margin: 0;}
+		.s-input .s-search .searchtext:-moz-placeholder{color: #FFFFFF;}
+		.s-input .s-search .searchtext::-moz-placeholder{color: #FFFFFF;}
+		.s-input .s-search .searchtext:-ms-input-placeholder{ color: rgba(255,255,255,.7);}
+		.s-input .s-search .searchtext::-webkit-input-placeholder {color: rgba(255,255,255,.7);}
+		.s-input .s-search .searchsubmit{position: absolute;right: 10px;top: 10px;font-size: 14px;color: #FFFFFF;cursor: pointer;background-position: -160px -180px;width: 20px;height: 20px;}
+	.more-meeting{line-height: 40px;background-color: #DDDDDD;display: block;color: #333333;font-size: 14px;}
+	.more-meeting:hover{color: #333333;}
+	.more-meeting>*{vertical-align: middle;}
+		.more-meeting img{width: 24px;height: 24px;}
+/*会议详情*/
+.meetingDetail-banner{width: 100%;max-height: 600px;}
+.mean-container .meetingDetail-banner{margin-top: 44px;}
+.mean-container .mean-bar{position: fixed;top: 0;left: 0;}
+#MT-header{width: 100%;background: #fff;box-shadow:  0 1px 2px 0 rgba(0,0,0,0.3);}
+.navF{position: fixed;top: 0;left: 0;;}
+	.meetingDetail-navigation li{display: inline;font-size: 16px;line-height: 70px;}
+		.meetingDetail-navigation li a{text-decoration: none;color: #333;padding: 0 20px;display: inline-block;}
+		.meetingDetail-navigation li a.apply{color: #fff; width: 160px; height: 50px;background-color: #62bc0e;line-height: 50px;}
+.mean-container .mean-bar .meetingDetail-navigation li{line-height: 50px;}
+.mean-container .mean-bar .meetingDetail-navigation li a{text-align: center;}
+.mean-container .mean-bar,.mean-container .mean-nav{background: #62bc0e;}
+.mean-container .mean-nav ul li a{padding:0 5%;}
+.meetingDetailBox>ul li{border-bottom: 1px solid #ddd;padding-bottom:30px}
+.meetingDetailBox>ul li:last-child{border-bottom: none;}
+	.main h2{font-size: 20px;margin-top: 50px;}
+	.main h3{font-size: 18px;font-weight: normal;margin: 30px 0 20px 0;}
+	.main .meetingDetailBox p{text-indent: 28px;font-size: 14px;line-height: 24px;margin-bottom: 0;}
+		.main .meetingDetailBox p span{display: inline-block;}
+.toastmasterBox>ul li{padding: 30px 0;}
+.toastmasterBox>ul li:first-child{padding-top: 0;}
+.toastmasterBox>ul li:last-child{border-bottom: none;}
+	.toastmaster-list{display: table;table-layout: fixed;width: 100%;}
+		.toastmaster-list .toastmaster-LBox{display: table-cell;width: 148px;padding:0 20px 0 28px;vertical-align: top;}
+			.toastmaster-list .toastmaster-photo{background: center no-repeat;background-size: cover;width: 100px;height: 100px;}
+		.toastmaster-list .toastmaster-RBox{display: table-cell;width: 100%;}
+			.toastmaster-list .toastmaster-RBox h4{font-size:16px;font-weight: normal;margin-bottom: 16px;}
+
+#meetingDetail-Time{border-bottom: 1px solid #ddd;border-top: 1px solid #ddd;background: none repeat scroll 0 0 #f6f6f6;}
+	#meetingDetail-Time .detailTime{text-indent: 0;}
+	.starttime,.endtime{font-size: 14px;display: inline-block;text-indent: 28px;}
+	.deadline{font-size: 16px;margin-top: 20px;text-indent: 28px;}
+.meetingpalce-map{margin-left: 28px;}
+#vote ul li{font-size: 14px;color: #333;background: none repeat scroll 0 0 #f6f6f6;margin-left: 28px;margin-top: 10px;padding-left: 10px;line-height: 28px;}
+#vote p{text-indent: 28px;}
+	#vote ul li label{font-weight: normal;}
+label [type="radio"], label [type="checkbox"]{position: relative;top: 2px;}
+#vote .Vote-btn{width: 140px;height: 36px;line-height: 36px;margin: 40px auto;background-color: #62bc0e;color: #fff;font-size: 14px;display: block;}
+.meetingDetail-copyright{background: none repeat scroll 0 0 #ddd; color: #333;font-size: 14px;line-height: 60px;}
+/*================报名信息=============*/	
+/*填写报名信息*/		
+body.registration{background-color: #F5F5F5;}
+.registration-container{width: 750px;margin-top: 40px; box-shadow: 0px 0px 10px 0px rgba( 0, 0, 0,.35 );background-color: #FFFFFF;padding-bottom: 80px;}
+	.registration-banner{max-height: 300px;width: 100%;box-shadow: 0 2px 9px 0 rgba(0,0,0,0.3);}
+	.meeting-infor{padding:50px 10px 20px 8%;}
+		.meeting-infor h1{font-weight: normal;margin: 0;color: #2f86c9;font-size: 24px;}
+		.meeting-infor p{color: #333333;font-size: 18px;margin:24px 0 0 0;}
+.registration-infor-box{padding: 0 40px;}
+	.registration-prompt{border: 1px dashed #DDDDDD;line-height: 32px;color: #2f86c9;font-size: 14px;}
+	.submit-registration{display: block;margin: 60px auto 0 auto;}
+.registration-copyright{line-height: 40px;color: #AAAAAA;background-color: #f4f4f4;margin-top: 10px;}	
+/*报名成功*/
+.registration-erweima{width: 260px;height: 260px;border: 1px dashed #DDDDDD;margin: 30px auto 40px;}	
+	.registrationCode{width: 190px;height: 190px;margin: 24px auto 12px;}
+		.registrationCode img{width: 190px;height: 190px;}	
+	.codedown{display: block;color: #999;font-size: 18px;}
+		a.codedown:hover,a.codedown:link,a.codedown:visited{color: #999;text-decoration: none;}
+	.success-prompt{color: #2f86c9;font-size: 18px;}
+		.success-prompt i{color: #00a300;font-size: 20px;}
+/*查询报名信息*/
+.return-fill{color: #999999;font-size: 14px;display: block;margin-top: 40px;}
+.return-fill:hover,.return-fill:link,.return-fill:visited{color: #999999;text-decoration: none;}
+@media only screen and (max-width:750px ) {
+	body.registration{background-color: #FFFFFF;}
+		.registration-container{box-shadow: none;margin-top: 0;width: 100%;}
+		.meeting-infor{padding-top: 20px;padding-bottom: 20px;}
+			.meeting-infor h1{font-size: 16px;}
+			.meeting-infor p{font-size: 12px;margin-top: 12px;line-height: 1.2;}
+	.registration-infor-box{padding: 0 10px;}
+		.registration-infor-box .titleTag>*{font-size: 16px;}
+		.registration-prompt{font-size: 12px;}
+}
+/*userCenter*/
+.userCenter .nav{border-bottom:1px solid #2f86c9;}
+	.userCenter .nav .btn-group>*{border:1px solid #2f86c9;border-bottom:none !important;border-radius:5px 5px 0 0;color:#999;font-size:18px;}
+	.userCenter .nav .btn-group>*:hover{border:1px solid #2f86c9;background-color:#fff;color:#1a1a1a;}
+	.userCenter .nav .btn-group>*[active]{border:1px solid #2f86c9;background-color:#2f86c9;color:#fff;}
+
+.userCenter .panel{margin:0 auto 20px auto;border:none;}
+	.userCenter .panel .content{padding:20px;border:1px solid #ddd;border-top:none;border-radius:0 0 5px 5px;}
+		.userCenter .panel .title{padding:.5em 1em;border-radius:5px 5px 0 0;background-color:#2f86c9;font-size:14px;color:#fff;position:relative;}
+			.userCenter .panel .title .addOn{height:100%;border-radius:0 5px 0 0;position:absolute;right:0;top:0;color:#fff;line-height:1;}
+		.userCenter .panel thead{color:#999;}
+		.userCenter .panel thead tr>*{border-top:none;}
+		.userCenter .panel tr>*{padding:.5em 1em;border:1px solid #ddd;}
+		.userCenter .panel .meetingListManage tr>*{text-align:center;}
+		.userCenter .panel tr>*:first-child{text-align:left;}
+		.userCenter .panel tbody th{border-right:none;text-align:right !important;}
+		.userCenter .panel tbody th+td{border-left:none;padding-left:0;}
+		.userCenter .panel tbody .nothing{padding:50px;text-align:center;line-height:1.5;font-size:30px;color:#aaa;}
+		.userCenter .panel tbody tr:hover{background-color:#fafafa;}
+			.userCenter .panel .tool{color:#999;}
+			.userCenter .panel .tool .btn{padding:.1em .5em;}
+			.userCenter .panel .tool .btn:hover{color:#fff;background-color:#2f86c9;border:1px solid #2f86c9;}
+			.userCenter .tableClearType>*{margin:0 0 20px 0;}
+			.userCenter .tableClearType .th{font-size:14px;text-align:right;}
+			.userCenter .tableClearType .td{padding-left:1em;}
+			.userCenter .panel [type="text"],.userCenter .panel select{width:100%;}
+			.userCenter .panel img.map,.userCenter .panel img.miniSiteCover{width:100%;margin:0 0 10px 0;display:block;}
+			.userCenter .panel img.adCover{width:300px;height:110px;margin:0 0 10px 0;display:block;}
+			.userCenter .panel img.userFace{width:100px;height:100px;}
+			
+.userCenter .registerItem>*{margin:0 2px 5px 0;padding:5px;border:1px dashed #ddd;color:#999;font-size:14px;}
+.userCenter .registerItem>*:focus{outline:none;}
+	.userCenter .registerItem .name{width:5em;display:inline-block;text-align:left;}
+	.userCenter .registerItem label{margin:0 0 0 1em;padding:.2em .5em;background-color:#ddd;color:#fff;font-size:12px;}
+	.userCenter .registerItem label:after{content:"必填";font-weight:400;padding:0 0 0 .5em;}
+	.userCenter .registerItem [active]{border-color:#62bc0e;}
+		.userCenter .registerItem [active] .name{color:#62bc0e;font-weight:700;text-shadow:0 0 10px rgba(98,188,14,.4);}
+		.userCenter .registerItem label[active]{background-color:#62bc0e;}
+			.userCenter .registerItem label[active] .glyphicon:before{content:"\e067";}
+			
+.voteItemList>*{position:relative;}
+.voteItemList>*+*:not(span){margin:10px 0 0 0;}
+	.voteItemList .btn-clear{margin:-10px 0 0 0;position:absolute;top:50%;right:1em;font-size:20px;color:#ccc;opacity:0;}
+	.voteItemList>*:hover .btn-clear{right:.5em;opacity:1;}
+	.voteItemList .btn-clear:hover{color:#dd0f0f;}
+	
+	.meetingManage .voteNo{width:80px;font-size:40px !important;font-style:italic;color:#ccc;}
+			
+/*sideMenu*/
+.userCenter .sideMenu{padding:0;}
+.meetingManage>*:last-child{padding-right:0;}
+	.meetingManage .sideMenu>*{margin:0 0 10px 0;}
+		.meetingManage .sideMenu>*>*{padding:1em;border-left:1px solid #f2f2f2;border-right:1px solid #f2f2f2;display:block;color:#666;}
+		.meetingManage .sideMenu a[active],.meetingManage .sideMenu a:hover{padding-left:2em;background-color:#f2f2f2;color:#1a1a1a;}
+		.meetingManage .sideMenu a[active]{font-weight:700;}
+		.meetingManage .sideMenu .title{width:100%;border:none !important;border-radius:5px 5px 0 0;background-color:#f2f2f2;font-size:14px;color:#666;text-align:left;}
+		.meetingManage .sideMenu>[active] .title{background-color:#62bc0e;color:#fff;}
+		.meetingManage .sideMenu>*>*:first-child{border-radius:5px 5px 0 0;border:1px solid #f2f2f2;}
+		.meetingManage .sideMenu>*>*:last-child{border-radius:0 0 5px 5px;border:1px solid #f2f2f2;border-top:none;}
+		.meetingManage .uploadify-button{line-height:1 !important;}
+		.meetingManage .uploadify-queue,.meetingManage .uploadify{display:inline-block;}
+
+/*flipPageSys*/
+.flipPageSys{text-align:center !important;}
+	.flipPageSys>*{width:30px;height:30px;display:inline-block;color:#999;line-height:28px;}
+	.flipPageSys>*:hover{background-color:#fff;color:#1a1a1a;}
+	.flipPageSys [class*="arrow"]{position:relative;}
+	.flipPageSys [class*="arrow"]:after{margin:-.8em 0 0 -.3em;position:absolute;left:50%;top:50%;font-size:20px;}
+	.flipPageSys .arrowL:after{content:"«";}
+	.flipPageSys .arrowR:after{content:"»";}
+	.flipPageSys [active]{background-color:#2f86c9;color:#fff;}
+
+/*footer*/
+footer{padding:30px 0 0 0;background:#333 no-repeat bottom;border-top:5px solid #2f86c9;color:#bbb;font-size:16px;}
+	footer>.info{display:table;}
+		footer>.info>*{padding:10px 20px 10px 120px;border-left:1px solid #666;line-height:1.8;display:table-cell;float:none;}
+		footer>.info>.baseInfo{width:500px;position:relative;}
+			footer>.info>.baseInfo .wechatCode{width:130px;height:130px;position:absolute;top:65px;right:0;}
+	footer>.info>*:first-child{padding-left:0;border-left:none;}
+		footer .title{margin:0 0 20px 0;font-weight:700;color:#fff;}
+		footer a{display:block;color:#bbb;}
+		footer a:hover{color:#fff;}
+	footer>.copyright{width:1000px;height:50px;margin:60px auto 0 auto;font-size:14px;text-align:center;background-position:0 -220px;line-height:48px;}
+
+/**/
+
+/*插件fix*/
+.slidesjs-slide{height:380px;display:block;background:no-repeat center;background-size:cover;position:relative;}
+.slidesjs-pagination{width:100%;position:absolute;bottom:10px;left:0;z-index:11;text-align:center;}
+	.slidesjs-pagination>*{display:inline-block;}
+		.slidesjs-pagination a{width:9px;height:9px;margin:0 5px;display:block;border-radius:50%;border:1px solid #fff;text-indent:10em;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.2);}
+		.slidesjs-pagination .active{width:10px;height:10px;border:none;background-color:#fff;box-shadow:0 2px 10px rgba(0,0,0,.4);}
+	.slidesjs-navigation{width:40px;height:90px;margin:-45px 0 0 0;display:block;position:absolute;top:50%;z-index:11;text-indent:-100em;overflow:hidden;opacity:.4;transition:.2s  ease-in-out;}
+	.slidesjs-navigation:hover{opacity:1;}
+	.slidesjs-previous{left:0;background-position:0 -270px;}
+	.slidesjs-next{right:0;background-position:-40px -270px;}
+
+/*font*/
+.fs12{font-size:12px;}
+.fs14{font-size:14px;}
+.en{font-family:Arial;}
+.must{color:#dd0f0f;}
+.c9{color:#999;}
+.cC{color:#ccc;}
+.cBlue{color:#2f86c9;}
+.cRed{color:#dd0f0f;}

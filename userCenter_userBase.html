@@ -1,0 +1,152 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>会·更轻松</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/format.css" media="screen">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="js/jquery_min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".banner").slidesjs({
+		//width: 940,
+		height:380,
+		play:{auto:true}
+	});
+});
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid head">
+	<div class="row tool">
+		<div class="row width-main mc">
+			<div class="col-sm-6">
+				欢迎光临！<a>请登录</a><a>免费注册</a>
+			</div>
+			<div class="col-sm-6 taR">
+				<a href="userCenter_meetingList.html">个人中心</a><a href="" class="btn-green boxR tra-fast">创建会议</a>
+			</div>
+		</div>
+	</div>
+	<div class="row nav">
+		<div class="row width-main mc">
+			<div class="col-sm-4">
+				<a class="logo ui" href="index.html"></a>
+			</div>
+			<div class="col-sm-8 tra-fast_E taR">
+				<a href="index.html" active>首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid userCenter">
+	<div class="row banner">
+		<a href="" style="background-image:url(http://docs.alibabagroup.com/assets2/images/cn/home/home_banner_1.png);"></a>
+		<a href="" style="background-image:url(http://eventdove.com/resource/20150828/96_20150828165052467.jpg);"></a>
+	</div>
+	<div class="row row-public width-main mc">
+		<div class="nav">
+			<div class="btn-group tra-fast_E">
+				<a class="btn btn-default" href="userCenter_meetingList.html">会议管理</a>
+				<a class="btn btn-default" href="userCenter_userBase.html" active>账号及信息管理</a>
+			</div>
+		</div>
+	</div>
+	<div class="row width-main meetingManage mc">
+		<ul class="col-sm-2 sideMenu noSelect tra-fast_EE">
+			<li active>
+				<div class="title">我的账号</div>
+				<a href="userCenter_userBase.html" active>基础信息</a>
+				<a href="userCenter_userPassword.html">密码修改</a>
+				<a href="userCenter_organizerList.html">主办方管理</a>
+			</li>
+		</ul>
+		<div class="col-sm-10">
+			<div class="panel">
+				<div class="title vaM_E"><span class="glyphicon glyphicon-list-alt ico-text"></span>账号基础信息</div>
+				<div class="content tableClearType vaM_EE">
+					<div class="tableSys">
+						<div class="w5x th">账号：</div>
+						<div class="td">16496131@qq.com</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">昵称：</div>
+						<div class="td"><input type="text" class="form-control"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">头像：</div>
+						<div class="td">
+							<img src="image/MTBG.png" class="userFace">
+							<button class="btn btn-default btn-sm" type="button">点击选择并上传</button>
+							<span class="cBlue ml10">尺寸要求：100x100px&nbsp;&nbsp;格式要求：jpg&nbsp;&nbsp;文件大小限制：&le;200kb</span>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">姓名：</div>
+						<div class="td"><input type="text" class="form-control w5x-imp dpIB" placeholder="姓"> - <input type="text" class="form-control w8x-imp dpIB" placeholder="名"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">电话：</div>
+						<div class="td"><input type="text" class="form-control" placeholder="电话/手机"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">邮箱：</div>
+						<div class="td"><input type="email" class="form-control" placeholder="E-mail"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">公司名称：</div>
+						<div class="td"><input type="text" class="form-control"></div>
+					</div>
+					<!--
+					<div class="tableSys">
+						<div class="w5x th">个人描述：</div>
+						<div class="td"><textarea type="text" class="form-control h5x-imp"></textarea></div>
+					</div>
+					-->
+					<div class="taC tra-fast_E">
+						<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-ok ico-text vaM"></span>确定</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="row">
+		<div class="info width-main tra-fast_EE mc">
+			<div>
+				<div class="title">关于我们</div>
+				<a href="">关于会议</a>
+				<a href="">加入会议</a>
+			</div>
+			<div>
+				<div class="title">导航</div>
+				<a href="">首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+			<div class="baseInfo vaM_E">
+				<div class="title">关注会议</div>
+				<span class="ico-mail ico-text ui"></span>support@huiyi.com<br>
+				<span class="ico-tell ico-text ui"></span>85601515<br>
+				<span class="ico-qq ico-text ui"></span>1545486486<br>
+				<span class="ico-weiboSina ico-text ui"></span>huiyi@sina.com<br>
+				<span class="ico-wechat ico-text ui"></span>扫二维码！了解更多！ <span class="glyphicon glyphicon-hand-right ico-text"></span>
+				<img src="image/wechatCode.jpg" class="wechatCode"> 
+			</div>
+		</div>
+		<div class="copyright ui">Copyright©2015 huiyi.com 版权所有 苏ICP备10211262</div>
+	</footer>
+</div>
+</body>
+</html>

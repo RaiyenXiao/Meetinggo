@@ -1,0 +1,196 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<title>会·更轻松</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/format.css" media="screen">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="js/jquery_min.js"></script>
+<script src="js/jquery.slides.min.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	$(".banner").slidesjs({
+		//width: 940,
+		height:380,
+		play:{auto:true}
+	});
+});
+</script>
+
+
+</head>
+<body>
+<div class="container-fluid head">
+	<div class="row tool">
+		<div class="row width-main mc">
+			<div class="col-sm-6">
+				欢迎光临！<a>请登录</a><a>免费注册</a>
+			</div>
+			<div class="col-sm-6 taR">
+				<a href="userCenter_meetingList.html">个人中心</a><a href="" class="btn-green boxR tra-fast">创建会议</a>
+			</div>
+		</div>
+	</div>
+	<div class="row nav">
+		<div class="row width-main mc">
+			<div class="col-sm-4">
+				<a class="logo ui" href="index.html"></a>
+			</div>
+			<div class="col-sm-8 tra-fast_E taR">
+				<a href="index.html" active>首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="container-fluid userCenter">
+	<div class="row banner">
+		<a href="" style="background-image:url(http://docs.alibabagroup.com/assets2/images/cn/home/home_banner_1.png);"></a>
+		<a href="" style="background-image:url(http://eventdove.com/resource/20150828/96_20150828165052467.jpg);"></a>
+	</div>
+	<div class="row row-public width-main mc">
+		<div class="nav">
+			<div class="btn-group tra-fast_E">
+				<a class="btn btn-default" active>创建会议</a>
+			</div>
+		</div>
+	</div>
+	<div class="width-main meetingManage mc">
+			<div class="panel">
+				<div class="title vaM_E"><span class="glyphicon glyphicon-list-alt ico-text"></span>内容编辑</div>
+				<div class="content tableClearType vaM_EE">
+					<div class="tableSys">
+						<div class="w5x must th">主办方：</div>
+						<div class="td">
+							<select class="form-control">
+								<option>请选择</option>
+							</select>
+						</div>
+						<div class="w12x td"><a href="userCenter_organizerNew.html" class="btn btn-success tra-fast">前往添加主办方</a></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">活动名称：</div>
+						<div class="td"><input type="text" class="form-control"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">时间设定：</div>
+						<div class="td">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="开始时间-点击设置">
+								<a class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></a>
+							</div>
+						</div>
+						<div class="w4x td must taC">至</div>
+						<div class="td">
+							<div class="input-group">
+								<input type="text" class="form-control" placeholder="结束时间-点击设置">
+								<a class="input-group-addon btn"><span class="glyphicon glyphicon-calendar"></span></a>
+							</div>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x must th">地点：</div>
+						<div class="td">
+							<select class="form-control">
+								<option>省/直辖市</option>
+							</select>
+						</div>
+						<div class="td">
+							<select class="form-control">
+								<option>城市/区/县</option>
+							</select>
+						</div>
+						<div class="td">
+							<select class="form-control">
+								<option>请选择</option>
+							</select>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th"></div>
+						<div class="td"><input type="text" class="form-control" placeholder="详细地址"></div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">地图图片：</div>
+						<div class="td">
+							<img src="image/MTBG.png" class="map">
+							<button class="btn btn-default btn-sm" type="button">点击选择并上传</button>
+							<span class="c9 ml10">注：可以使用额外设计制作的地图来展示，帮助用户找到目的地。</span>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">宣传图：</div>
+						<div class="td">
+							<img src="image/MTBG.png" class="adCover">
+							<button class="btn btn-default btn-sm" type="button">点击选择并上传</button>
+							<span class="cBlue ml10">尺寸要求：300x110px&nbsp;&nbsp;格式要求：jpg&nbsp;&nbsp;文件大小限制：&le;300kb</span><span class="c9 ml20">注：将在主站上展示。</span>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class="w5x th">封面大图：</div>
+						<div class="td">
+							<img src="image/MTBG.png" class="miniSiteCover">
+							<button class="btn btn-default btn-sm" type="button">点击选择并上传</button>
+							<span class="cBlue ml10">尺寸要求：1920x600px&nbsp;&nbsp;格式要求：jpg&nbsp;&nbsp;文件大小限制：&le;600kb</span><span class="c9 ml20">注：将在会议主页上展示。</span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="title vaM_E"><span class="glyphicon glyphicon-list-alt ico-text"></span>活动详情</div>
+				<div class="content">
+					<textarea type="text" class="form-control">把这个换成编辑器</textarea>
+				</div>
+			</div>
+			<div class="panel">
+				<div class="title vaM_E"><span class="glyphicon glyphicon-check ico-text"></span>报名信息收集</div>
+				<div class="content registerItem tra-fast_EE">
+					<button class="btn btn-sm" type="button" active must><span class="name">姓名</span><label class="label btn" active must><span class="glyphicon glyphicon-unchecked"></span></label></button>
+					<button class="btn btn-sm" type="button" active must><span class="name">性别</span><label class="label btn"><span class="glyphicon glyphicon-unchecked"></span></label></button>
+					<button class="btn btn-sm" type="button"><span class="name">姓名</span><label class="label btn"><span class="glyphicon glyphicon-unchecked"></span></label></button>
+					<button class="btn btn-sm" type="button"><span class="name">性别</span><label class="label btn"><span class="glyphicon glyphicon-unchecked"></span></label></button>
+					<button class="btn btn-sm" type="button"><span class="name">姓名</span><label class="label btn"><span class="glyphicon glyphicon-unchecked"></span></label></button>
+					<button class="btn btn-sm" type="button"><span class="name">性别</span><label class="label btn"><span class="glyphicon glyphicon-unchecked"></span></label></button>
+				</div>
+			</div>
+			<div class="taC row-relax tra-fast_E">
+				<button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-floppy-disk ico-text vaM"></span>仅保存</button>
+				<button type="submit" class="btn btn-success ml20"><span class="glyphicon glyphicon-send ico-text vaM"></span>保存并发布</button>
+			</div>
+	</div>
+	<footer class="row">
+		<div class="info width-main tra-fast_EE mc">
+			<div>
+				<div class="title">关于我们</div>
+				<a href="">关于会议</a>
+				<a href="">加入会议</a>
+			</div>
+			<div>
+				<div class="title">导航</div>
+				<a href="">首页</a>
+				<a href="">更多会议</a>
+				<a href="">特色功能</a>
+				<a href="">关于我们</a>
+			</div>
+			<div class="baseInfo vaM_E">
+				<div class="title">关注会议</div>
+				<span class="ico-mail ico-text ui"></span>support@huiyi.com<br>
+				<span class="ico-tell ico-text ui"></span>85601515<br>
+				<span class="ico-qq ico-text ui"></span>1545486486<br>
+				<span class="ico-weiboSina ico-text ui"></span>huiyi@sina.com<br>
+				<span class="ico-wechat ico-text ui"></span>扫二维码！了解更多！ <span class="glyphicon glyphicon-hand-right ico-text"></span>
+				<img src="image/wechatCode.jpg" class="wechatCode"> 
+			</div>
+		</div>
+		<div class="copyright ui">Copyright©2015 huiyi.com 版权所有 苏ICP备10211262</div>
+	</footer>
+</div>
+</body>
+</html>
