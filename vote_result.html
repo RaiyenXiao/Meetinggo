@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<link rel="icon" href="favicon.png" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+<meta charset="UTF-8">
+<title>会·更轻松</title>
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+<link rel="stylesheet" href="css/format.css" media="screen">
+<link rel="stylesheet" href="css/main.css" media="screen">
+<script src="js/jquery_min.js"></script>
+<script src="js/TweenMax.min.js"></script>
+<script src="js/jquery_impDo.js"></script>
+<script src="js/public.js"></script>
+<script type="text/javascript">
+$(function(){
+	/*
+	投票数据演示
+	*/
+	$(".progress-bar").each(function(index){
+		var data=Math.round(Math.random()*99),maxData=99;
+		voteOut($(this),data,"票",data/maxData,index/5);
+	
+	});	
+});
+$(window).scroll(function(){
+	    		var scrollHeight = $(window).scrollTop();
+	    		var interactionbannerHeight = $(".agenda-banner-container").height();
+				if(scrollHeight > interactionbannerHeight){
+					$("#meeting-interaction-nav").addClass("navF");
+				}else{
+					$("#meeting-interaction-nav").removeClass("navF");
+				}
+	    	});
+</script>
+</head>
+<body class="registration">
+	<div class="agenda-banner-container ofH">
+		<img src="image/agendaBG.jpg" alt="" class="img-responsive mc"/>
+	</div>
+	<div id="meeting-interaction-nav">		
+			<ul class="meeting-interaction-navigation mc">
+				<li class="taC" >
+					<a href="agenda.html">议程</a>
+				</li>
+				<li class="taC" active>
+					<a href="vote_list.html">投票</a>
+				</li>
+				<li class="taC">
+					<a href="topic.html">话题</a>
+				</li>
+				<li class="taC">
+					<a href="directory.html">名录</a>
+				</li>
+			</ul>		
+	</div>
+	<div class="container mt20  userCenter vote-detail">
+		<div class="meetingManage">
+		<div class="panel">
+			<div class="vote-detailBox">
+				<div class="vote-detail-title">
+					投票标题投票标题投票标题投票标题标题标题标题标题标题
+				</div>
+				<div class="vote-detail-hint taC"><span>单选</span></div>
+			</div>
+			<div class="vote-option tableClearType vaM_EE">
+					<div class="tableSys">
+						<div class=" th voteNo">1.</div>
+						<div class="td voteItemList">
+							赞成:
+							<div class="progress mt10">
+								<div class="progress-bar progress-bar-striped"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class=" th voteNo">2.</div>
+						<div class="td voteItemList">
+							不赞成:
+							<div class="progress mt10">
+								<div class="progress-bar progress-bar-striped"></div>
+							</div>
+						</div>
+					</div>
+					<div class="tableSys">
+						<div class=" th voteNo">3.</div>
+						<div class="td voteItemList">
+							中立:
+							<div class="progress mt10">
+								<div class="progress-bar progress-bar-striped"></div>
+							</div>
+						</div>
+					</div>					
+				</div>
+			<div class="taC">
+				<a href="vote_list.html" class="return-votelist boxR">返回列表</a>				
+			</div>
+		</div>
+		</div>
+	</div>
+</body>
+</html>
