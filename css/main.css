@@ -12,6 +12,7 @@ a:hover{text-decoration:none;}
 .mt10{margin-top:10px;}
 .mt20{margin-top:20px;}
 .ml5{margin-left:5px;}
+.mr10{margin-right: 10px;}
 .ml10{margin-left:10px;}
 .ml20{margin-left:20px;}
 
@@ -161,7 +162,7 @@ span[class*="ico-"]{display:inline-block;position:relative;top:-1px;}
 	.s-input .s-time{width: 100px;line-height: 40px;background-color: #FFFFFF;color: #333333;margin-left: 1px;}
 		.s-input .s-time select{border: none;color: #333333;width: 100px;text-indent: 10px;height: 40px;}
 	.s-input .s-search{position: relative;}
-		.s-input .s-search .searchtext{width: 499px;background-color: rgba(0,0,0,0);border: 1px solid #FFFFFF;line-height: 38px;text-indent: 10px;padding: 0;margin: 0;}
+		.s-input .s-search .searchtext{width:399px;background-color: rgba(0,0,0,0);border: 1px solid #FFFFFF;line-height: 38px;text-indent: 10px;padding: 0;margin: 0;}
 		.s-input .s-search .searchtext:-moz-placeholder{color: #FFFFFF;}
 		.s-input .s-search .searchtext::-moz-placeholder{color: #FFFFFF;}
 		.s-input .s-search .searchtext:-ms-input-placeholder{ color: rgba(255,255,255,.7);}
@@ -236,6 +237,7 @@ body.registration{background-color: #F5F5F5;}
 .return-fill{color: #999999;font-size: 14px;display: block;margin-top: 40px;}
 .return-fill:hover,.return-fill:link,.return-fill:visited{color: #999999;text-decoration: none;}
 @media only screen and (max-width:750px ) {
+	body.registration{background-color: #FFFFFF;}
 		.registration-container{box-shadow: none;margin-top: 0;width: 100%;}
 		.meeting-infor{padding-top: 20px;padding-bottom: 20px;}
 			.meeting-infor h1{font-size: 16px;}
@@ -246,7 +248,12 @@ body.registration{background-color: #F5F5F5;}
 }
 /*================会议活动=============*/	
 /*议程*/
-.agenda-banner-container{width: 100%;max-height: 360px;background-color: #F5F5F5;}
+.agenda-banner-container{width: 100%;height: 300px;background: center no-repeat;background-size: cover;position: relative;}
+	.agenda-banner-container .banner-cover{background-color: rgba(47,134,201,.85);width: 100%;height: 100%;}
+	.agenda-banner-container .agenda-banner-text{position: absolute;top: 50%;-webkit-transform: translate(0%,-50%); -ms-transform: translate(0%,-50%); transform: translate(0%,-50%); }
+		.agenda-banner-text .agenda-banner-title{padding-left: 1em;border-left: 2px solid #FFFFFF;color: #FFFFFF;font-size: 16px;}
+		.agenda-banner-text h2{font-weight: normal;margin:0 0 10px 0 ;font-size: 12px;}
+		.agenda-banner-text .agenda-banner-time,.agenda-banner-text .agenda-banner-address{margin-top: 30px;color: #FFFFFF;}
 .meeting-interaction-navigation{border-bottom: 1px solid #ddd;display: table;table-layout: fixed;width: 100%;background-color: #FFFFFF;}
 	.meeting-interaction-navigation li{display: inline-block;font-size: 12px;height: 36px;line-height: 36px;border-bottom: 2px solid #FFFFFF;display: table-cell;width: 25%;}
 	.meeting-interaction-navigation li[active]{border-bottom-color:#2f86c9 ;}
@@ -256,7 +263,6 @@ body.registration{background-color: #F5F5F5;}
 		.meeting-interactionBox li a.agenda-list .agenda-list-number{display: table-cell;width: 32px;font-size: 36px;vertical-align: top;font-style: italic;color: #ccc;}
 		.meeting-interactionBox li a.agenda-list .agenda-list-detail{display: table-cell;width: 100%;padding-left: 1em;}
 			.meeting-interactionBox li a.agenda-list .agenda-list-detail .agenda-title{font-size: 14px;color: #333;margin-bottom: 6px;}
-				.agenda-listBox li a.agenda-list .agenda-list-detail .agenda-title span{color: #999999;margin-right: 10px;}
 			.meeting-interactionBox li a.agenda-list .agenda-list-detail p{margin: 0;line-height: 1.4;}
 /*投票*/
 .meeting-interactionBox li a.vote-list{color: #333333;display: table;table-layout: fixed;width: 100%;font-size: 14px;padding: 14px 0;}
@@ -267,7 +273,7 @@ body.registration{background-color: #F5F5F5;}
 	.meeting-interactionBox li a.vote-list .vote-list-arrow{display: table-cell;width:34px;vertical-align: middle;padding-left: 20px;}
 .meeting-interactionBox li a.vote-list[status="marked"]{color: #999999;}
 	.meeting-interactionBox li a.vote-list[status="marked"] .voted-mark{display: table-cell;}
-.vote-detail .panel{box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);padding: 20px 0;}
+.vote-detail .panel{box-shadow: 0px 1px 3px rgba(0, 0, 0, .2);padding: 20px 0;border: none;}
 	.vote-detail .panel .vote-detailBox{border-bottom: 1px solid #DDDDDD;position: relative;min-height: 60px;}
 		.vote-detail .panel .vote-detail-title{border-left: 2px solid #2f86c9;line-height: 1.5;padding: 0 20px;font-size: 14px;}
 		.vote-detail .panel .vote-detailBox .vote-detail-hint{color: #999999;font-size: 12px;background-color: #EEEEEE;border: 1px solid #DDDDDD;border-radius: 10px;margin: 8px 0 8px 20px;width: 40px;padding: 2px 0;}
@@ -289,14 +295,14 @@ body.registration{background-color: #F5F5F5;}
 		.topic-detail-content  .topic-detail-content-reply{color: #999999;}
 .meeting-interactionBox li.reply-list-container{padding: 0 20px;}
 .meeting-interactionBox li .reply-list{display: table;table-layout: fixed;width: 100%;padding-top: 14px;padding-bottom: 14px;}
-	.meeting-interactionBox li .reply-list .reply-list-LBox{display: table-cell;width: 40px;}
-		.reply-photo{width: 40px;height: 40px;border: 1px solid #EEEEEE;border-radius: 50%;background: center no-repeat;background-size: cover;}
+	.meeting-interactionBox li .reply-list .reply-list-LBox{display: table-cell;width: 24px;}
+		.reply-ico{font-size: 24px;color: #ddd;}
 	.meeting-interactionBox li .reply-list .reply-detail{display: table-cell;width: 100%;padding-left: 1em;vertical-align: top;}
 		.meeting-interactionBox li .reply-list .reply-detail .reply-name{font-size: 14px;color: #333333;}
 			.meeting-interactionBox li .reply-list .reply-detail .reply-name span{color: #999999;font-size: 12px;display: inline-block;text-indent: 20px;}
 		.meeting-interactionBox li .reply-list .reply-detail p{margin: 10px 0 0 0;line-height: 1.4;font-size: 12px;color: #666666;}
 	.reply-box{padding: 20px;display: table;table-layout: fixed;width: 100%;}
-		.reply-box-left{display: table-cell;width: 40px;vertical-align: top;}
+		.reply-box-left{display: table-cell;width: 24px;vertical-align: top;}
 		.reply-box-center{display: table-cell;width: 100%;padding-left: 1em;padding-right: 1em;}
 			.reply-box-center textarea{height: 70px;border: 1px solid #ddd;width: 100%;padding: 10px;}
 		.reply-box-right{display: table-cell;width: 40px;background-color: #62bc0e;color: #fff;font-size: 14px;vertical-align: top;padding: 21px 14px;cursor: pointer;}
@@ -306,8 +312,8 @@ body.registration{background-color: #F5F5F5;}
 		.directory-list-left .directory-member-box .directory-member{display: inline-block;padding-right: 1em;border-right: 1px solid #ddd;}
 			.directory-list-left .directory-member-box .directory-member span{font-size:12px;}
 		.directory-list-left .directory-member-box .directory-member-tel{display: inline-block;padding-left: 1em;}
-.directory-list-right{display: table-cell;width: 60px;}
-	.directory-list-right .look-directory-member button{padding: 3px 0;background-color: #62bc0e;color: #FFFFFF;border-radius: 10px;margin-bottom: 6px;text-align: center;width: 60px;}
+.directory-list-right{display: table-cell;width: 60px;vertical-align: middle;}
+	.directory-list-right .look-directory-member button{padding: 3px 0;background-color: #5BC0DE;color: #FFFFFF;border-radius: 10px;text-align: center;width: 60px;}
 	.directory-list-right .add-directory-member button{padding: 3px 0;background-color:#2f86c9;color: #FFFFFF;border-radius: 10px;text-align: center;width: 60px;}
 	.directory-list-right .accept-directory-member button{padding: 3px 0;background-color:#62bc0e;color: #FFFFFF;border-radius: 10px;text-align: center;width: 60px;}
 	.directory-list-right .add-directory-member button.send{padding: 3px 0;color: #999;border-radius: 10px;border: 1px solid #ddd;text-align: center;width: 60px;background-color: #FFFFFF;}
@@ -320,6 +326,7 @@ body.registration{background-color: #F5F5F5;}
 	.directory-member-detail .userCenter .tableClearType .td{font-size: 14px;}
 /*userCenter*/
 .userCenter .nav{border-bottom:1px solid #2f86c9;}
+.userCenter .panel .nav{border-bottom:1px solid #ddd;}
 	.userCenter .nav .btn-group>*{border:1px solid #2f86c9;border-bottom:none !important;border-radius:5px 5px 0 0;color:#999;font-size:18px;}
 	.userCenter .nav .btn-group>*:hover{border:1px solid #2f86c9;background-color:#fff;color:#1a1a1a;}
 	.userCenter .nav .btn-group>*[active]{border:1px solid #2f86c9;background-color:#2f86c9;color:#fff;}
